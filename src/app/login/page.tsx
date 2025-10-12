@@ -1,11 +1,13 @@
-export default function LoginPage() {
+'use client';
+import { LoginPage } from "@/components/LoginPage";
+
+export default function Login() {
+  const handleLogin = (role?: 'user' | 'organizer' | 'admin') => {
+    console.log(`Logged in as ${role}`);
+    // Here you could also update global state, set cookies, etc.
+  };
+
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Login</h1>
-      <p>Login form will go here</p>
-      <p className="text-sm text-gray-600 mt-4">
-        Note: Should redirect to / if already logged in
-      </p>
-    </div>
+    <LoginPage onLogin={handleLogin} />
   );
 }
