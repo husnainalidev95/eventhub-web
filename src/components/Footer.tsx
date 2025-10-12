@@ -185,14 +185,14 @@ export function Footer() {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+                        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
               <p>&copy; 2024 EventHub. All rights reserved.</p>
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-                <button className="hover:text-white transition-colors">Privacy Policy</button>
+                <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                 <span className="hidden sm:inline">•</span>
-                <button className="hover:text-white transition-colors">Terms of Service</button>
+                <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
                 <span className="hidden sm:inline">•</span>
-                <button className="hover:text-white transition-colors">Cookie Policy</button>
+                <Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
               </div>
             </div>
             <div className="flex items-center gap-2 text-center">
