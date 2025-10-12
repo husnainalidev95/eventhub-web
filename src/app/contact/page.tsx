@@ -1,8 +1,13 @@
-export default function ContactPage() {
+import type { Metadata } from 'next';
+import ContactPage from "@/components/ContactPage";
+
+export const metadata: Metadata = {
+  title: 'Contact Us | EventHub',
+  description: 'Get in touch with EventHub. We\'re here to help with any questions about events, bookings, or partnerships.',
+};
+
+export default function Contact() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Contact Us</h1>
-      <p>Contact form and information will go here</p>
-    </div>
+    <ContactPage />
   );
 }
