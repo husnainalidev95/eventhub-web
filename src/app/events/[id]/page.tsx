@@ -1,8 +1,12 @@
-export default function EventDetailsPage() {
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Event Details</h1>
-      <p>Event details will go here</p>
-    </div>
-  );
+import type { Metadata } from 'next';
+import { EventDetailsPage } from '@/components/EventDetailsPage';  // Named import
+import { mockEvents } from '@/lib/mock-data';
+
+export const metadata: Metadata = {
+  title: 'Event Details | EventHub',
+  description: 'View event details and book tickets',
+};
+
+export default function EventPage({ params }: { params: { id: string } }) {
+  return <EventDetailsPage events={mockEvents} eventId={params.id} />;
 }
