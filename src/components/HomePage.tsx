@@ -5,11 +5,9 @@ import { Event } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Calendar, MapPin, Search, TrendingUp, Users, Star } from 'lucide-react';
+import { Calendar, MapPin, Search, Users, Star } from 'lucide-react';
 import { EventCard } from '@/components/EventCard';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { ImageWithFallback } from '@/components/figma/ImageWithFallback';
 
 interface HomePageProps {
   events: Event[];
@@ -141,7 +139,7 @@ export function HomePage({ events }: HomePageProps) {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-2xl md:text-3xl mb-2">Featured Events</h2>
-              <p className="text-muted-foreground">Don't miss these popular events</p>
+              <p className="text-muted-foreground">Don&apos;t miss these popular events</p>
             </div>
             <Button 
               variant="outline" 
