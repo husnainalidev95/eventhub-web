@@ -1,8 +1,13 @@
-export default function AboutPage() {
+import type { Metadata } from 'next';
+import AboutPage from "@/components/AboutPage";
+
+export const metadata: Metadata = {
+  title: 'About Us | EventHub',
+  description: 'Learn about EventHub\'s mission to connect people through amazing events and experiences.',
+};
+
+export default function About() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">About EventHub</h1>
-      <p>Information about EventHub will go here</p>
-    </div>
+    <AboutPage />
   );
 }
